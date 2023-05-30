@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ccc;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 60vh;
+  margin: auto;
+}
+
+.score-header {
+  text-align: start;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 100%;
+  border: 2px solid grey;
+  box-shadow: -4px -5px 5px 1px rgba(24, 23, 23, 0.75);
+  -webkit-box-shadow: -4px -5px 5px 1px rgba(63, 61, 61, 0.75);
+  -moz-box-shadow: -4px -5px 5px 1px rgba(44, 42, 42, 0.75);
+}
+
+/* recent score */
+.score-container {
+  flex: 1;
+  margin: 4px;
+}
+
+.recent-score {
+  display: flex;
+  align-self: center;
+  padding: 4px;
+}
+
+.btn-score {
+  background-color: blue;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 8px;
+  border: none;
+  font-size: 18px;
+}
+
+.score-list {
+  list-style-type: none;
+  padding: 4px;
+}
+
+.score-list-item {
+  border: 2px solid #fff;
+  padding: 2px 4px;
+  margin-top: 1.2rem;
+}
+
+/* score Input form */
+
+.score-input {
+  flex: 1;
+  padding: 18px;
+  align-content: center;
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  padding: 4px;
+  width: 80%;
+  margin-top: 1.2rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 6px;
+  border-radius: 3px;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.btn-submit {
+  padding: 4px;
+  font-size: 18px;
+  background-color: blue;
+  color: #fff;
+  border-radius: 4px;
+  float: right;
+  border: none;
+  margin-top: 6px;
+}

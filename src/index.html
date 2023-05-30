@@ -9,5 +9,52 @@
 		<link rel="stylesheet" href="./style.css" />
 		<title>LoaderBoard-list</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div class="score-container">
+					<h1 class="score-header">LeaderBoard</h1>
+					<div class="recent-score">
+						<h2>Recent scores</h2>
+						<button class="btn-score" id="btn-score">Refresh</button>
+					</div>
+
+					<ul class="score-list" id="score-list">
+						<!-- <li class="score-list-item">miki</li>
+						<li class="score-list-item">herriye</li> -->
+					</ul>
+				</div>
+
+				<!--score Input form -->
+				<div class="score-input">
+					<h2>Add your score</h2>
+					<form action="" class="form-group">
+						<div>
+							<input
+								type="text"
+								name=""
+								id="name-input"
+								class="form-control"
+								placeholder="Your name"
+								required />
+						</div>
+						<div>
+							<input
+								type="number"
+								name=""
+								id="score-input"
+								class="form-control"
+								placeholder="Your score"
+								required />
+						</div>
+						<input
+							class="btn-submit"
+							id="btn-submit"
+							type="submit"
+							value="Submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
