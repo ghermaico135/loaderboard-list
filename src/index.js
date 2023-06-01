@@ -1,5 +1,6 @@
 /** @format */
 import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import getGameID from './module/getGameId.js';
 import getItems from './module/getItem.js';
 import { addItem, clearValue } from './module/addItem.js';

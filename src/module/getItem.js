@@ -7,7 +7,7 @@ const display = (scoreList) => {
   let content = '';
   scoreList.forEach((score) => {
     content += `
-<li class="score-list-item">${score.user}  : ${score.score} </li>`;
+<li class="score-list-item border border-dark rounded text-light p-2">${score.user}  : ${score.score} </li>`;
   });
   scoreListContainer.innerHTML = content;
 };
