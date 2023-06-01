@@ -1,17 +1,25 @@
 /** @format */
 import './style.css';
-import store from './module/storage.js';
-import { add, clearValue, display } from './module/utility.js';
+import getGameID from './module/getGameId.js';
+import getItems from './module/getItem.js';
+import { addItem, clearValue } from './module/addItem.js';
 
 const submitBtn = document.querySelector('#btn-submit');
+const refreshBtn = document.querySelector('#btn-score');
 
-window.addEventListener('load', () => {
-  display(store.scoreList);
+const gameId = JSON.parse(localStorage.getItem('gameId')) || undefined;
+
+if (!gameId) {
+  getGameID(gameId);
+}
+// Get Game id from the api
+
+refreshBtn.addEventListener('click', () => {
+  getItems(gameId);
 });
 
 submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  add(store.scoreList);
+  addItem(gameId);
   clearValue();
-  display(store.scoreList);
 });

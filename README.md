@@ -44,7 +44,7 @@
 
 - **Using Linters**
 - **objects for dynamic manipulation**
--
+- **using API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +108,7 @@ You can deploy this project using [Netlify](https://www.netlify.com/) or [Github
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Adding form list dynamically**
+- **Adding,GetItems,Show form list dynamically**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
