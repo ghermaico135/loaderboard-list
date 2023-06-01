@@ -9,20 +9,21 @@
 		<link rel="stylesheet" href="./style.css" />
 		<title>LoaderBoard-list</title>
 	<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
-	<body>
+	<body class="bg-light text-dark">
 		<div class="wrapper">
-			<div class="container">
+			<div class="container p-3 mb-2 bg-secondary text-dark">
 				<div class="score-container">
 					<h1 class="score-header">LeaderBoard</h1>
 					<div class="recent-score">
 						<h2>Recent scores</h2>
-						<button class="btn-score" id="btn-score">Refresh</button>
+						<button
+							class="btn-score border border-primary rounded"
+							id="btn-score">
+							Refresh
+						</button>
 					</div>
 
-					<ul class="score-list" id="score-list">
-						<!-- <li class="score-list-item">miki</li>
-						<li class="score-list-item">herriye</li> -->
-					</ul>
+					<ul class="score-list" id="score-list"></ul>
 				</div>
 
 				<!--score Input form -->
@@ -48,7 +49,7 @@
 								required />
 						</div>
 						<input
-							class="btn-submit"
+							class="btn-submit border border-primary rounded"
 							id="btn-submit"
 							type="submit"
 							value="Submit" />
