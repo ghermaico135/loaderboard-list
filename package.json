@@ -5,15 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
-    "start": "webpack serve --open",
-    "build": "webpack",
+    "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ghermaico135/loaderboard-list.git"
+    "url": "git+https://github.com/{ghermaico135}/{loaderboard-list}.git"
   },
   "keywords": [],
   "author": "",
