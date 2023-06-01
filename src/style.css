@@ -67,6 +67,8 @@ body {
 .score-list {
   list-style-type: none;
   padding: 4px;
+  height: 30vh;
+  overflow-y: scroll;
 }
 
 .score-list-item {
