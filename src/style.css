@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
+:root {
+  --primary-color: #0a0add;
+  --light-color: #ccc;
+  --white-color: #fff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +14,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ccc;
+  background-color: var(--light-color);
 }
 
 .wrapper {
@@ -17,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 60vw;
-  height: 60vh;
+  height: 100vh;
   margin: auto;
 }
 
@@ -50,8 +56,8 @@ body {
 }
 
 .btn-score {
-  background-color: blue;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   border-radius: 4px;
   margin-left: 8px;
   border: none;
@@ -61,10 +67,12 @@ body {
 .score-list {
   list-style-type: none;
   padding: 4px;
+  height: 30vh;
+  overflow-y: scroll;
 }
 
 .score-list-item {
-  border: 2px solid #fff;
+  border: 2px solid var(--white-color);
   padding: 2px 4px;
   margin-top: 1.2rem;
 }
@@ -98,8 +106,8 @@ body {
 .btn-submit {
   padding: 4px;
   font-size: 18px;
-  background-color: blue;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   border-radius: 4px;
   float: right;
   border: none;
